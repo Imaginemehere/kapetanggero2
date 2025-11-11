@@ -1,0 +1,254 @@
+<!-- 
+ITS121-1L Web Systems and Technologies 1 Laboratory
+Kape Tanggero Coffee Shop Website 
+Author: Ken Ivan Panganiban
+Co-Author: Lundag, Juliana Marie | Tan, Furyk Cleavin | Solis, Jaymar | Rodriguez, John Cederic 
+Date: November 7, 2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kape Tanggero - Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/KapeTanggeroLogo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="top">
+    
+    <!-- =================== NAVIGATION BAR =================== -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="assets/img/KapeTanggeroLogo-Transparent.png" alt="Kape Tanggero Logo">
+                <span class="logo-text">Kape Tanggero</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav-links">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>  
+    </nav>
+    </div>
+
+    <header class="hero">
+        <div class="container hero-inner">
+            <div class="hero-emblem">
+                <img src="assets/img/KapeTanggeroLogo-Transparent.png" alt="Kape Tanggero" class="hero-logo">
+            </div>
+            <div class="hero-copy">
+                <span class="hero-overline">Neighborhood coffee brewed with heart</span>
+                <h1>Welcome to Kape Tanggero</h1>
+                <p>Have a moment with coffee, music, and friends at our one-stop coffee shop in the heart of Quezon City.</p>
+                <div class="hero-cta">
+                    <a href="html/menu.html" class="btn hero-btn primary">Explore the Menu</a>
+                    <a href="html/about.html" class="btn hero-btn outline">Our Story</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- BGM AUDIO -->
+    <audio id="myAudio" autoplay loop>
+    <source src="assets/Music/BGM6.mp3" type="audio/mpeg">
+    </audio>
+     <!-- BGM END -->
+
+    <!-- =================== HOME =================== -->
+    <div class="container main-container">
+        <section class="section-intro">
+            <h2 class="section-title">Explore Our Offerings</h2>
+            <p class="section-subtitle">Follow your curiosity — each page unfolds a little more of our slow-crafted café experience.</p>
+        </section>
+
+        <div class="row g-4 my-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card home-box h-100">
+                    <div class="card-body text-center">
+                        <h3 class="card-title"><span class="card-icon" aria-hidden="true">☕</span>About Us</h3>
+                        <p class="card-text">Meet the people, provenance, and stories that shape each pour.</p>
+                        <a href="html/about.html" class="btn buy-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card home-box h-100">
+                    <div class="card-body text-center">
+                        <h3 class="card-title"><span class="card-icon" aria-hidden="true">📋</span>Our Menu</h3>
+                        <p class="card-text">Savor single-origin espresso, slow cold brews, and nostalgic pastries.</p>
+                        <a href="html/menu.html" class="btn buy-button">View Menu</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card home-box h-100">
+                    <div class="card-body text-center">
+                        <h3 class="card-title"><span class="card-icon" aria-hidden="true">📸</span>Gallery</h3>
+                        <p class="card-text">Peek inside our warm-toned corners and analog-inspired coffee bar.</p>
+                        <a href="html/gallery.html" class="btn buy-button">See Photos</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card home-box h-100">
+                    <div class="card-body text-center">
+                        <h3 class="card-title"><span class="card-icon" aria-hidden="true">⭐</span>Reviews</h3>
+                        <p class="card-text">Hear from neighbors who made our café part of their daily ritual.</p>
+                        <a href="html/reviews.html" class="btn buy-button">Read Reviews</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card home-box h-100">
+                    <div class="card-body text-center">
+                        <h3 class="card-title"><span class="card-icon" aria-hidden="true">📞</span>Contact</h3>
+                        <p class="card-text">Plan your visit, reserve a nook, or start a collaboration.</p>
+                        <a href="html/contact.html" class="btn buy-button">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card home-box h-100">
+                    <div class="card-body text-center">
+                        <h3 class="card-title"><span class="card-icon" aria-hidden="true">📱</span>Socials</h3>
+                        <p class="card-text">Stay in the loop with pop-up brews and playlists on Facebook.</p>
+                        <a href="https://www.facebook.com/KAPE.Tanggero/" target="_blank" class="btn buy-button">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="section-title section-title--sm">Why Choose Kape Tanggero?</h3>
+        <ul class="styled-list">
+            <li>Premium locally-sourced and specialty coffee beans</li>
+            <li>Expert baristas trained in the art of coffee making</li>
+            <li>Cozy, vintage-inspired ambiance perfect for any occasion</li>
+            <li>Community-focused space that brings people together</li>
+            <li>Supporting local farmers and sustainable practices</li>
+        </ul>
+
+        <p class="outro-text">Join our growing community of coffee enthusiasts and rediscover the charm of slow coffee in the heart of the neighborhood.</p>
+    </div>
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </a>
+
+    <!-- =================== FOOTER =================== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="index.html">
+                        <img src="assets/img/KapeTanggeroLogo-Transparent.png" alt="Kape Tanggero Logo">
+                        <span>Kape Tanggero</span>
+                    </a>
+                    <p class="footer-tagline">A moment of coffee, connection, and calm.</p>
+                </div>
+
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>Visit Us</h4>
+                        <address>
+                            9 Shorthorn Street<br>
+                            Project 8, Quezon City<br>
+                            Philippines
+                        </address>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Hours</h4>
+                        <ul>
+                            <li>Mon – Fri: 1:00 PM – 1:00 AM</li>
+                            <li>Sat – Sun: 3:00 PM – 3:00 AM</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Let's Connect</h4>
+                        <ul>
+                            <li><a href="tel:+639171234567">+63 915 434 1031</a></li>
+                            <li><a href="mailto:kapetanggero.ph@gmail.com">kapetanggero.ph@gmail.com</a></li>
+                            <li><a href="https://maps.app.goo.gl/D2cRMfpiP8ArP23t7" target="_blank">Get Directions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/KAPE.Tanggero/" target="_blank" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2c0-2 1.2-3 3-3h2v3h-1c-.8 0-1 .4-1 1v1h2.6l-.4 3H14v7A10 10 0 0 0 22 12"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/kape.tanggero/" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2C4 2 2 4 2 7v10c0 3 2 5 5 5h10c3 0 5-2 5-5V7c0-3-2-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm5.5-.9a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z"/></svg>
+                    </a>
+                </div>
+                <p class="footer-note">&copy; 2025 Kape Tanggero Coffee Co. Brewed in Quezon City.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--javascript-->
+      <script src="js/main.js"></script>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToTop = document.querySelector('.back-to-top');
+            if (!backToTop) return;
+
+            const toggleBackToTop = () => {
+                if (window.scrollY > 240) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            };
+
+            toggleBackToTop();
+            window.addEventListener('scroll', toggleBackToTop, { passive: true });
+        });
+    </script>
+</body>
+</html>
+
