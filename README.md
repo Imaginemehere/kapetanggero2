@@ -9,3 +9,5 @@ This repository hosts the code for the Kape Tanggero Coffee Shop Website, a mult
     Key Features: Responsive design and multi-page navigation (Home, Menu, Gallery, Reviews, Contact)
 
     Author/Date: Ken Ivan Panganiban (October 31, 2025)
+
+    Co-Author: Lundag, Juliana Marie | Tan, Furyk Cleavin | Solis, Jaymar | Rodriguez, John Cedric 
