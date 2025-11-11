@@ -1,0 +1,263 @@
+<!-- 
+ITS121-1L Web Systems and Technologies 1 Laboratory
+Kape Tanggero Coffee Shop Website 
+Author: Ken Ivan Panganiban
+Co-Author: Lundag, Juliana Marie | Tan, Furyk Cleavin | Solis, Jaymar | Rodriguez, John Cederic 
+Date: November 7, 2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kape Tanggero - Reviews</title>
+    <link rel="icon" type="image/x-icon" href="/kapetanggero-main/assets/img/KapeTanggeroLogo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/kapetanggero-main/css/styles.css">
+</head>
+<body>
+    <div id="top">
+    <!-- =================== NAVIGATION BAR =================== -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand logo" href="index.html">
+                <img src="/kapetanggero-main/assets/img/KapeTanggeroLogo-Transparent.png" alt="Kape Tanggero Logo">
+                <span class="logo-text">Kape Tanggero</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav-links">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/kapetanggero-main/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <!-- BGM AUDIO -->
+    <audio id="myAudio" autoplay loop>
+    <source src="/kapetanggero-main/assets/Music/BGM4.mp3" type="audio/mpeg">
+    </audio>
+     <!-- BGM END -->
+    <!-- =================== TESTIMONIAL CONTENT =================== -->
+    <div class="container main-container">
+        <h1>Customer Reviews</h1>
+        <p>See what our happy customers are saying about their favorite drinks and cozy experiences at <strong>Kape Tanggero</strong>.</p>
+
+        <!-- ⭐ CUSTOMER RATINGS TABLE -->
+		<h2>⭐ Customer Ratings</h2>
+		<div class="table-responsive shadow rounded-3 overflow-hidden mb-4">
+			<table class="table table-striped table-hover align-middle table-bordered border-secondary-subtle mb-0 caption-top">
+				<caption class="px-3">Recent customer ratings for top drinks</caption>
+				<thead>
+					<tr>
+						<th scope="col" class="ps-3">Customer</th>
+						<th scope="col">Drink Ordered</th>
+						<th scope="col" class="text-center">Rating</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="ps-3">Kurt Cevin Aranan</td>
+						<td>Iced Spanish Latte</td>
+						<td class="text-center"><span class="badge bg-warning text-dark">★★★★★</span></td>
+					</tr>
+					<tr>
+						<td class="ps-3">Richard Rimpola</td>
+						<td>Caramel Macchiato</td>
+						<td class="text-center"><span class="badge bg-warning text-dark">★★★★★</span></td>
+					</tr>
+					<tr>
+						<td class="ps-3">Maria Fabello</td>
+						<td>Dark Mocha Frappe</td>
+						<td class="text-center"><span class="badge bg-warning text-dark">★★★★★</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+        <!-- 💬 WRITTEN TESTIMONIALS -->
+        <h3>What Our Customers Say</h3>
+        <div class="testimonial-box shadow-box">
+            <img src="/kapetanggero-main/assets/img/review/reviewer1.png" alt="Customer 1" class="testimonial-img">
+            <p>This coffee shop has been one of my all-time favorite cafes from day one—and it still is to this day. </p>
+        </div>
+
+        <div class="testimonial-box shadow-box">
+            <img src="/kapetanggero-main/assets/img/review/reviewer2.png" alt="Customer 2" class="testimonial-img">
+            <p>Been supporting them since the days they were just doing pop-ups, selling bottled cold brew on the curb. Now they have their own coffee shop, and it’s amazing to see how far they’ve come. The space is cozy, well-thought-out, and the quality just keeps getting better every time I visit. You can really feel how much heart they put into it. Definitely a hidden gem in QC—and no, I’m not going to gatekeep. They deserve all the love.</p>
+        </div>
+
+        <div class="testimonial-box shadow-box">
+            <img src="/kapetanggero-main/assets/img/review/reviewer3.png" alt="Customer 3" class="testimonial-img">
+            <p>Great modern interior ambience. Coffee is good, pastries are okay. They occassionally host tattoo-collaboration sessions.</p>
+        </div>
+
+        <!-- 👍 POPULAR FEEDBACK LIST -->
+        <h4>Popular Feedback</h4>
+        <ul class="styled-list">
+            <li>Excellent coffee quality and unique local flavors</li>
+            <li>Relaxing café ambiance — perfect for hangouts</li>
+            <li>Friendly staff and quick service</li>
+        </ul>
+
+        <!-- 📸 Customers Photos -->
+        <h5>📸 Customers Photos</h5>
+        <div class="gallery-grid">
+            <a href="#rev1"><img src="/kapetanggero-main/assets/img/review//reviewphoto_1.png" alt="Customer Photo 1"></a>
+            <a href="#rev2"><img src="/kapetanggero-main/assets/img/review//reviewphoto_2.png" alt="Customer Photo 2"></a>
+            <a href="#rev3"><img src="/kapetanggero-main/assets/img/review//reviewphoto_3.png" alt="Customer Photo 3"></a>
+            <a href="#rev4"><img src="/kapetanggero-main/assets/img/review//reviewphoto_4.png" alt="Customer Photo 4"></a>
+            <a href="#rev5"><img src="/kapetanggero-main/assets/img/review//reviewphoto_5.png" alt="Customer Photo 5"></a>
+            <a href="#rev6"><img src="/kapetanggero-main/assets/img/review//reviewphoto_6.png" alt="Customer Photo 6"></a>
+            <a href="#rev7"><img src="/kapetanggero-main/assets/img/review//reviewphoto_7.png" alt="Customer Photo 7"></a>
+            <a href="#rev8"><img src="/kapetanggero-main/assets/img/review//reviewphoto_8.png" alt="Customer Photo 8"></a>
+        </div>
+
+        <!-- Lightbox overlays -->
+        <div id="rev1" class="lightbox">
+            <a href="#_" class="lightbox-close">&times;</a>
+            <img src="/kapetanggero-main/assets/img/review//reviewphoto_1.png" alt="Customer Photo 1">
+        </div>
+        <div id="rev2" class="lightbox">
+            <a href="#_" class="lightbox-close">&times;</a>
+            <img src="/kapetanggero-main/assets/img/review//reviewphoto_2.png" alt="Customer Photo 2">
+        </div>
+        <div id="rev3" class="lightbox">
+            <a href="#_" class="lightbox-close">&times;</a>
+            <img src="/kapetanggero-main/assets/img/review//reviewphoto_3.png" alt="Customer Photo 3">
+        </div>
+        <div id="rev4" class="lightbox">
+            <a href="#_" class="lightbox-close">&times;</a>
+            <img src="/kapetanggero-main/assets/img/review//reviewphoto_4.png" alt="Customer Photo 4">
+        </div>
+        <div id="rev5" class="lightbox">
+            <a href="#_" class="lightbox-close">&times;</a>
+            <img src="/kapetanggero-main/assets/img/review//reviewphoto_5.png" alt="Customer Photo 5">
+        </div>
+        <div id="rev6" class="lightbox">
+            <a href="#_" class="lightbox-close">&times;</a>
+            <img src="/kapetanggero-main/assets/img/review//reviewphoto_6.png" alt="Customer Photo 6">
+        </div>
+        <div id="rev7" class="lightbox">
+            <a href="#_" class="lightbox-close">&times;</a>
+            <img src="/kapetanggero-main/assets/img/review//reviewphoto_7.png" alt="Customer Photo 7">
+        </div>
+        <div id="rev8" class="lightbox">
+            <a href="#_" class="lightbox-close">&times;</a>
+            <img src="/kapetanggero-main/assets/img/review//reviewphoto_8.png" alt="Customer Photo 8">
+        </div>
+    </div>
+
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </a>
+
+    <!-- =================== FOOTER =================== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="/kapetanggero-main/index.html">
+                        <img src="/kapetanggero-main/assets/img/KapeTanggeroLogo-Transparent.png" alt="Kape Tanggero Logo">
+                        <span>Kape Tanggero</span>
+                    </a>
+                    <p class="footer-tagline">A moment of coffee, connection, and calm.</p>
+                </div>
+
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>Visit Us</h4>
+                        <address>
+                            9 Shorthorn Street<br>
+                            Project 8, Quezon City<br>
+                            Philippines
+                        </address>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Hours</h4>
+                        <ul>
+                            <li>Mon – Fri: 1:00 PM – 1:00 AM</li>
+                            <li>Sat – Sun: 3:00 PM – 3:00 AM</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Let's Connect</h4>
+                        <ul>
+                            <li><a href="tel:+639154341031">+63 915 434 1031</a></li>
+                            <li><a href="mailto:kapetanggero.ph@gmail.com">kapetanggero.ph@gmail.com</a></li>
+                            <li><a href="https://maps.app.goo.gl/D2cRMfpiP8ArP23t7" target="_blank">Get Directions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/KAPE.Tanggero/" target="_blank" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2c0-2 1.2-3 3-3h2v3h-1c-.8 0-1 .4-1 1v1h2.6l-.4 3H14v7A10 10 0 0 0 22 12"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/kape.tanggero/" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2C4 2 2 4 2 7v10c0 3 2 5 5 5h10c3 0 5-2 5-5V7c0-3-2-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm5.5-.9a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z"/></svg>
+                    </a>
+                </div>
+                <p class="footer-note">&copy; 2025 Kape Tanggero Coffee Co. Brewed in Quezon City.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToTop = document.querySelector('.back-to-top');
+            if (!backToTop) return;
+
+            const toggleBackToTop = () => {
+                if (window.scrollY > 240) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            };
+
+            toggleBackToTop();
+            window.addEventListener('scroll', toggleBackToTop, { passive: true });
+        });
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,236 @@
+<!-- 
+ITS121-1L Web Systems and Technologies 1 Laboratory
+Kape Tanggero Coffee Shop Website 
+Author: Ken Ivan Panganiban
+Co-Author: Lundag, Juliana Marie | Tan, Furyk Cleavin | Solis, Jaymar | Rodriguez, John Cederic 
+Date: November 7, 2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kape Tanggero - Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="/kapetanggero-main/assets/img/KapeTanggeroLogo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/kapetanggero-main/css/styles.css">
+</head>
+<body>
+    <div id="top">
+    <!-- =================== NAVIGATION BAR =================== -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand logo" href="/kapetanggero-main/index.html">
+                <img src="/kapetanggero-main/assets/img/KapeTanggeroLogo-Transparent.png" alt="Kape Tanggero Logo">
+                <span class="logo-text">Kape Tanggero</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav-links">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/kapetanggero-main/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <!-- BGM AUDIO -->
+    <audio id="myAudio" autoplay loop>
+    <source src="/kapetanggero-main//assets/Music/BGM5.mp3" type="audio/mpeg">
+    </audio>
+     <!-- BGM END -->
+    <!-- =================== CONTACT CONTENT =================== -->
+	<div class="container main-container">
+		<h1>Get In Touch</h1>
+		<p>Your feedback keeps our coffee warm and our hearts full. Drop us a message if you’d like to know more about our menu, catering, or collaborations.</p>
+
+		<div class="row g-4">
+			<div class="col-lg-6">
+				<h2>Contact Form</h2>
+				<form class="contact-form">
+					<!-- NAME INPUT -->
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+					<!-- EMAIL INPUT -->
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+
+					<!-- RADIO BUTTONS -->
+					<label>Gender:</label>
+					<div class="radio-group">
+						<label>
+							<input type="radio" id="male" name="gender" value="male">
+							Male
+						</label>
+						<label>
+							<input type="radio" id="female" name="gender" value="female">
+							Female
+						</label>
+						<label>
+							<input type="radio" id="preferns" name="gender" value="preferns">
+							Prefer Not To Say
+						</label>
+					</div>
+
+					<!-- DROPDOWN MENU -->
+					<label for="category">Inquiry Type:</label>
+					<select id="category" name="category">
+						<option>Order Inquiry</option>
+						<option>Menu Feedback</option>
+						<option>Event Booking</option>
+						<option>Supplier Partnership</option>
+						<option>Other</option>
+					</select>
+
+					<!-- TEXTAREA -->
+					<label for="message">Message:</label>
+					<textarea id="message" name="message" rows="4" placeholder="Tell us how we can help you"></textarea>
+
+					<!-- BUTTONS -->
+					<div class="button-group">
+						<button type="submit" class="buy-button">Submit</button>
+						<button type="reset" class="cart-button">Reset</button>
+					</div>
+				</form>
+			</div>
+			<div class="col-lg-6">
+				<h3>Visit Our Store</h3>
+				<iframe id="store-map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.844740852834!2d121.02186986713382!3d14.664750931759722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b70056c366fb%3A0x42af5f337bd2b336!2sKape%20Tanggero!5e0!3m2!1sen!2sph!4v1761310543951!5m2!1sen!2sph"
+					width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+				</iframe>
+
+				<!-- CONTACT INFORMATION -->
+				<h4>Contact Information</h4>
+				<ul class="styled-list">
+					<li>Contact: 0915-434-1031</li>
+					<li>Socials: kape.tanggero </li>
+					<li>Email: kapetanggero.ph@gmail.com</li>
+					<li>Address: #9 Shorthorn St. Brgy Bahay Toro, Quezon City, Philippines</li>
+				</ul>
+
+				<!-- BUSINESS HOURS -->
+				<h5>Business Hours</h5>
+				<ol class="styled-list">
+					<li>Monday to Friday: 1:00 PM - 1:00 AM</li>
+					<li>Saturday to Sunday: 3:00 PM - 3:00 AM</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+    <a href="#top" class="back-to-top" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </a>
+
+    <!-- =================== FOOTER =================== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a class="footer-logo" href="/kapetanggero-main/index.html">
+                        <img src="/kapetanggero-main/assets/img/KapeTanggeroLogo-Transparent.png" alt="Kape Tanggero Logo">
+                        <span>Kape Tanggero</span>
+                    </a>
+                    <p class="footer-tagline">A moment of coffee, connection, and calm.</p>
+                </div>
+
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <h4>Visit Us</h4>
+                        <address>
+                            9 Shorthorn Street<br>
+                            Project 8, Quezon City<br>
+                            Philippines
+                        </address>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Hours</h4>
+                        <ul>
+                            <li>Mon – Fri: 1:00 PM – 1:00 AM</li>
+                            <li>Sat – Sun: 3:00 PM – 3:00 AM</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Let's Connect</h4>
+                        <ul>
+                            <li><a href="tel:+639154341031">+63 915 434 1031</a></li>
+                            <li><a href="mailto:kapetanggero.ph@gmail.com">kapetanggero.ph@gmail.com</a></li>
+                            <li><a href="https://maps.app.goo.gl/D2cRMfpiP8ArP23t7" target="_blank">Get Directions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <a href="https://www.facebook.com/KAPE.Tanggero/" target="_blank" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.5 9.9v-7h-2v-3h2v-2c0-2 1.2-3 3-3h2v3h-1c-.8 0-1 .4-1 1v1h2.6l-.4 3H14v7A10 10 0 0 0 22 12"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/kape.tanggero/" target="_blank" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 2C4 2 2 4 2 7v10c0 3 2 5 5 5h10c3 0 5-2 5-5V7c0-3-2-5-5-5H7zm10 2a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm5.5-.9a1.1 1.1 0 1 0 0-2.2 1.1 1.1 0 0 0 0 2.2z"/></svg>
+                    </a>
+                </div>
+                <p class="footer-note">&copy; 2025 Kape Tanggero Coffee Co. Brewed in Quezon City.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!--javascript-->
+      <script src="/kapetanggero-main/js/main.js"></script>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const backToTop = document.querySelector('.back-to-top');
+            if (!backToTop) return;
+
+            const toggleBackToTop = () => {
+                if (window.scrollY > 240) {
+                    backToTop.classList.add('visible');
+                } else {
+                    backToTop.classList.remove('visible');
+                }
+            };
+
+            toggleBackToTop();
+            window.addEventListener('scroll', toggleBackToTop, { passive: true });
+        });
+    </script>
+
+</body>
+</html>
+
